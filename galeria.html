@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GALERIA</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style type="text/css">
+		header>nav>ul>li:nth-of-type(2){
+			transform: scale(1.5);
+		}
+		main{
+			color: #6e678e;
+		}
+		main>section{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		main>section>figure{
+			flex: 1;
+			min-width: 320px;
+			max-width: 500px;
+			margin: 0.5%;
+			filter: grayscale(100%) blur(0.5px);
+			transition: filter 0.5s ease, transform 0.4s ease;
+		}
+		main>section>figure>figcaption{
+			display: none;
+			background-color: #eceaf1;
+		}
+		main>section>figure:hover figcaption{
+			display: block;
+		}
+		main>section>figure:hover{
+			filter: none;
+			transform: scale(1.1);
+			z-index: 10;
+		}
+		main>section>figure:nth-of-type(1){
+			transform: skew(10deg);
+		}
+		main>section>figure:nth-of-type(1):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+		main>section>figure:nth-of-type(2){
+			transform: skew(5deg, -5deg);
+		}
+		main>section>figure:nth-of-type(2):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+		main>section>figure:nth-of-type(3){
+			transform: skew(-15deg);
+		}
+		main>section>figure:nth-of-type(3):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+		main>section>figure:nth-of-type(4){
+			transform: skew(-15deg, -10deg);
+		}
+		main>section>figure:nth-of-type(4):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+		main>section>figure:nth-of-type(5){
+			transform: skew(-10deg, 10deg);
+		}
+		main>section>figure:nth-of-type(5):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+		main>section>figure:nth-of-type(6){
+			transform: skew(5deg, -5deg);
+		}
+		main>section>figure:nth-of-type(6):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+		main>section>figure:nth-of-type(7){
+			transform: skew(-5deg, 10deg);
+		}
+		main>section>figure:nth-of-type(7):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+		main>section>figure:nth-of-type(8){
+			transform: skew(10deg, -5deg);
+		}
+		main>section>figure:nth-of-type(8):hover{
+			transform: skew(0deg);
+			transition: 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1><a href="index.html">UNIVERS SURREALISTA</a></h1>
+		<nav class="menu-escritorio">
+			<ul>
+				<li><a href="index.html">INICI</a></li>
+				<li><a href="galeria.html">GALERIA</a></li>
+				<li><a href="dali.html">SALVADOR DALÍ</a></li>
+				<li><a href="magritte.html">RENÉ MAGRITTE</a></li>
+				<li><a href="ernst.html">MAX ERNST</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+			</ul>
+		</nav>
+
+		<nav class="menu-movil">
+  			<div class="menu-icono">
+  			  	<div class="barra"></div>
+  			  	<div class="barra"></div>
+  			  	<div class="barra"></div>
+  			</div>
+  			<ul class="menu-lista">
+  			  	<li><a href="index.html">INICI</a></li>
+				<li><a href="galeria.html">GALERIA</a></li>
+				<li><a href="dali.html">SALVADOR DALÍ</a></li>
+				<li><a href="magritte.html">RENÉ MAGRITTE</a></li>
+				<li><a href="ernst.html">MAX ERNST</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+  			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<h3>Salvador Dalí (1904 - 1989)</h3>
+		<p>Va ser un artista espanyol conegut per la seva tècnica precisa i la seva imaginació desbordant. La seva obra, plena de simbolisme personal i referències a la psicoanàlisi, reflecteix una exploració profunda de l'inconscient. Dalí va crear un univers visual únic, on la realitat es fon amb el somni, influenciant tant el surrealisme com l'art del segle XX en general.</p>
+		<section>
+
+			<figure>
+				<figcaption>La persistència de la memòria (1931)</figcaption>
+				<img src="imag/dalimemoria2.jpg" alt="Obra 'La persistència de la memòria' de Dalí" />
+			</figure>
+			<figure>
+				<figcaption>Els elefants (1948)</figcaption>
+				<img src="imag/dalielefantes.jpg" alt="Obra 'Els elefants de Dalí" />	
+			</figure>
+			<figure>
+				<figcaption>El gran masturbador (1929)</figcaption>
+				<img src="imag/dalimasturbador.jpg" alt="Obra 'El gran masturbador' de Dalí" />
+			</figure>
+			<figure>		
+				<figcaption>Somni causat pel vol d'una abella al voltant d'una magrana un segon abans de despertar-se (1944)</figcaption>		
+				<img src="imag/daliabeja.jpg" alt="Obra 'Somni causat pel vol d'una abella al voltant d'una magrana un segon abans de despertar-se' de Dalí" />		
+			</figure>
+			<figure>
+				<figcaption>Construcció tova amb albercocs bullits (Premonició de la Guerra Civil) (1936)</figcaption>
+				<img src="imag/dalialbercocs.jpg" alt="Obra 'Construcció tova amb albercocs bullits' de Dalí" />
+			</figure>
+			
+			<figure>
+				<figcaption>Metamorfosi de Narcís (1937)</figcaption>
+				<img src="imag/dalimetamorfosis.jpg" alt="Obra 'Metamorfosi de Narcís' de Dalí" />
+			</figure>
+			<figure>
+				<figcaption>El Rostre de Mae West que pot utilitzar-se com a apartament surrealista (1934-1935)</figcaption>
+				<img src="imag/dalimae.jpg" alt="Obra 'El Rostre de Mae West que pot utilitzar-se com a apartament surrealista' de Dalí" />
+			</figure>
+			
+			<figure>
+				<figcaption>La temptació de Sant Antoni (1946)</figcaption>
+				<img src="imag/dalitentaciones.jpg" alt="Obra 'La temptació de Sant Antoni' de Dalí" />
+			</figure>
+		</section>
+		<h3>René Magritte (1898 - 1967)</h3>
+		<p>Va ser un pintor belga que va desafiar la percepció visual amb imatges paradoxals i misterioses. Les seves obres, aparentment simples però plenes de significat ocult, exploren la relació entre objecte i representació. Magritte va aportar una dimensió filosòfica al surrealisme, invitant-nos a qüestionar la realitat mateixa.</p>
+		<section>
+			<figure>
+				<figcaption>La traïció de les imatges (Això no és una pipa) (1929)</figcaption>
+				<img src="imag/renepipa.jpg" alt="Obra 'La traïció de les imatges' de Magritte" />
+			</figure>
+			<figure>
+				<figcaption>El fill de l’home (1964)</figcaption>
+				<img src="imag/renehijo.jpg" alt="Obra 'El fill de l’home' de Magritte" />
+			</figure>
+			<figure>
+				<figcaption>Els amants (1928)</figcaption>
+				<img src="imag/reneamantes.jpg" alt="Obra 'Els amants' de Magritte" />
+			</figure>
+			<figure>
+				<figcaption>L'imperi de les llums (1953-1954)</figcaption>
+				<img src="imag/renellums.jpg" alt="Obra 'L'imperi de les llums' de Magritte" />
+			</figure>
+			<figure>
+				<figcaption>La clau dels somnis (1930)</figcaption>
+				<img src="imag/reneclaus.jpg" alt="Obra 'La clau dels somnis' de Magritte" />
+			</figure>
+			<figure>
+				<figcaption>Golconda (1953)</figcaption>
+				<img src="imag/renegolconda.jpg" alt="Obra 'Golconda' de Magritte" />
+			</figure>
+			<figure>
+				<figcaption>El seductor (1950)</figcaption>
+				<img src="imag/reneseductor.jpg" alt="Obra 'El seductor' de Magritte" />
+			</figure>
+			<figure>
+				<figcaption>La clarividència (1936)</figcaption>
+				<img src="imag/reneclarividencia.jpg" alt="Obra 'La clarividència' de Magritte" />
+			</figure>
+		</section>
+		<h3>Max Ernst (1891 - 1976)</h3>
+		<p>Artista alemany i pioner del surrealisme, va innovar amb tècniques com el collage, el frottage i la decalcomania per explorar els límits de la imaginació. La seva obra, marcada pel simbolisme i els paisatges onírics, reflexiona sobre la relació entre l'home i la natura, així com l’inconscient. Ernst va jugar un paper essencial en el desenvolupament del surrealisme europeu.</p>
+		<section>
+			<figure>
+				<figcaption>El bosc (1927-1928)</figcaption>
+				<img src="imag/maxbosc.jpg" alt="Obra 'El bosc' d'Ernst" />
+			</figure>
+			<figure>
+				<figcaption>Ubu Imperator (1923)</figcaption>
+				<img src="imag/maxubu.jpg" alt="Obra 'Ubu Imperator' d'Ernst" />
+			</figure>
+			<figure>
+				<figcaption>Oedipus Rex (1922)</figcaption>
+				<img src="imag/maxrex.jpg" alt="Obra 'Oedipus Rex' d'Ernst" />
+			</figure>
+			<figure>
+				<figcaption>Davant de la meva ala dreta s'amaga la foscor militar (1975)</figcaption>
+				<img src="imag/maxmilitar.jpg" alt="Obra 'Davant de la meva ala dreta s'amaga la foscor militar' d'Ernst" />
+			</figure>
+			<figure>
+				<figcaption>L'àngel de la llar o el triomf del surrealisme (1937)</figcaption>
+				<img src="imag/maxangel.jpg" alt="Obra 'L'àngel de la llar o el triomf del surrealisme' d'Ernst" />
+			</figure>
+			<figure>
+				<figcaption>L’elephant de Célebes (1921)</figcaption>
+				<img src="imag/maxelefante.jpg" alt="Obra 'L’elephant de Célebes' d'Ernst" />
+			</figure>
+			<figure>
+				<figcaption>Bosc Roig (1970)</figcaption>
+				<img src="imag/maxroig.jpg" alt="Obra 'Bosc Roig' d'Ernst" />
+			</figure>
+			<figure>
+				<figcaption>L'Antílop (1941-1942)</figcaption>
+				<img src="imag/maxantilop.jpg" alt="Obra 'L'Antílop' d'Ernst" />
+			</figure>
+		</section>
+	</main>
+	<footer>
+		 <p>&copy; 2024 Cristina Roig</p>
+	</footer>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
